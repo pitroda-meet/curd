@@ -26,7 +26,7 @@ const EditProduct = () => {
       dispatch(getProductById(id));
     }
   }, [dispatch, id]);
-
+  //
   useEffect(() => {
     if (product) {
       setName(product.name || "");
