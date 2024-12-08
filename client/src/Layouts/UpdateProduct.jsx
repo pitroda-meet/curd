@@ -7,7 +7,7 @@ import {
 } from "../features/ProductFeatures/productSlice";
 import { Form, Button, Row, Col, Container, Image } from "react-bootstrap";
 
-const editProduct = () => {
+const UpdateProduct = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -139,4 +139,4 @@ const editProduct = () => {
   );
 };
 
-export default editProduct;
+export default UpdateProduct;
