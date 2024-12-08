@@ -5,14 +5,14 @@ import "./index.css";
 import "./App.css";
 
 import App from "./App.jsx";
-import Home from "./Layouts/Home.jsx";
+import Home from "./Layouts/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AddProduct from "./Layouts/AddProduct.jsx";
+import AddProduct from "./Layouts/AddProduct";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
-import EditProduct from "./Layouts/editProduct.jsx";
+import EditProduct from "./Layouts/editProduct";
 // Set up your router here with `createBrowserRouter`
 const router = createBrowserRouter([
   {
