@@ -127,12 +127,15 @@ export default productSlice.reducer;
 export const FetchProducts = () => async (dispatch) => {
   dispatch(getProductRequest());
   try {
-    const response = await fetch(`http://localhost:3000/api/getproducts`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      `https://curd-7fko.onrender.com/api/getproducts`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -148,10 +151,13 @@ export const FetchProducts = () => async (dispatch) => {
 export const createProduct = (formData, navigate) => async (dispatch) => {
   dispatch(createProductStart());
   try {
-    const response = await fetch("http://localhost:3000/api/uploadproduct", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      "https://curd-7fko.onrender.com/api/uploadproduct",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     const data = await response.json();
     if (!response.ok) {
@@ -168,7 +174,7 @@ export const deleteProduct = (id) => async (dispatch) => {
   dispatch(deleteProductStart());
   try {
     const response = await fetch(
-      `http://localhost:3000/api/deleteproduct/${id}`,
+      `https://curd-7fko.onrender.com/api/deleteproduct/${id}`,
       {
         method: "DELETE",
         headers: {
@@ -191,7 +197,7 @@ export const getProductById = (id) => async (dispatch) => {
   dispatch(getSingleProductStart());
   try {
     const response = await fetch(
-      `http://localhost:3000/api/getbyproducts/${id}`
+      `https://curd-7fko.onrender.com/api/getbyproducts/${id}`
     );
     const data = await response.json();
 
@@ -211,7 +217,7 @@ export const updateProduct =
     dispatch(updateProductStart());
     try {
       const response = await fetch(
-        `http://localhost:3000/api/updateProduct/${id}`,
+        `https://curd-7fko.onrender.com/api/updateProduct/${id}`,
         {
           method: "PUT",
           body: updatedFormData,
