@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
 import AddProduct from "./Layouts/AddProduct.jsx";
-
+import editProduct from "./Layouts/editProduct.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
