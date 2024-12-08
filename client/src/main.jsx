@@ -14,7 +14,6 @@ import store from "./store/store.js";
 import AddProduct from "./Layouts/AddProduct.jsx";
 import EditProduct from "./Layouts/editProduct.jsx";
 
-// Set up your router here with `createBrowserRouter`
 const router = createBrowserRouter([
   {
     path: "/",
