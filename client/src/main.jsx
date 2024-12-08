@@ -11,8 +11,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
-import AddProduct from "./Layouts/editProduct.jsx";
-import EditProduct from "./Layouts/AddProduct.jsx";
+import AddProduct from "./Layouts/AddProduct.jsx";
+import EditProduct from "./Layouts/editProduct.jsx";
+
 // Set up your router here with `createBrowserRouter`
 const router = createBrowserRouter([
   {
