@@ -12,7 +12,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
 import AddProduct from "./Layouts/AddProduct.jsx";
-import EditProduct from "./Layouts/editProduct.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/addproduct", element: <AddProduct /> },
-      { path: "/editproduct/:id", element: <EditProduct /> },
+      { path: "/editproduct/:id", element: <editProduct /> },
     ],
   },
 ]);
