@@ -210,7 +210,7 @@ export const getProductById = (id) => async (dispatch) => {
     dispatch(getSingleProductFailure(error.message));
   }
 };
-
+//
 export const updateProduct =
   ({ id, updatedFormData, navigate }) =>
   async (dispatch) => {
